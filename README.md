@@ -310,6 +310,8 @@ developing scalable model integration
 
 ## 🏛 Doecial Sphere Architecture
 
+
+
 ```mermaid
 flowchart TD
 
@@ -334,6 +336,7 @@ end
 C --> J
 C --> K
 C --> L
+```
 
 ## 🗺 Map of the Sphere
 
