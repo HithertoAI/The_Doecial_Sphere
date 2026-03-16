@@ -334,3 +334,43 @@ end
 C --> J
 C --> K
 C --> L
+
+## 🗺 Map of the Sphere
+
+                🌐 THE DOECIAL SPHERE
+
+                         ✦
+                   The Outer Gate
+              (Entry & Orientation)
+
+                         │
+                         ▼
+
+                 🏛 The Concourse
+              The Covenant Ritual
+             "Leave Ego Behind"
+
+                         │
+                         ▼
+
+                 🌿 THE VAETH
+        The Central Field of Discourse
+         (Ideas Engage Ideas Here)
+
+        ┌────────────┬────────────┬────────────┐
+        │            │            │            │
+        ▼            ▼            ▼            ▼
+
+🏟 Faraday's Close   🎨 Menagerie   📚 Athenaeum   🛠 Atelier
+Concept Arena       Creative Hall   Knowledge Hall  AI Workshop
+(Logos & Pathos)    Style Masks     Scribes         Corpus Creation
+
+                         │
+                         ▼
+
+                   🤖 Core Systems
+
+               Model Adaptation Shield
+                    Fallacy Sensor
+                    Wisdom Score
+                     Eidolons
