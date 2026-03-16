@@ -17,7 +17,16 @@ A prototype platform exploring anonymous, concept-centered discourse mediated by
 </p>
 
 ---
+## ⚡ TL;DR
 
+The Doecial Sphere is an experimental social platform where:
+
+• identities are abstracted  
+• ideas are the primary object of interaction  
+• AI mediates discourse to protect anonymity  
+• reputation rewards reflection rather than influence
+
+The goal is to create a space for **honest, concept-centered discussion** in the age of AI.
 ## 🧭 Overview
 
 **The Doecial Sphere** is an experimental social platform developed by **Hitherto** that reimagines digital interaction.
