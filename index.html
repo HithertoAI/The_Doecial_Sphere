@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Doecial Sphere · full visual prototype</title>
+    <!-- Font Awesome 6 (free) for subtle icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background: #1a1f2b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem 1rem;
+        }
+
+        .sphere-app {
+            max-width: 1400px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 2rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sanctuary-header {
+            background: #1a1f2b;
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid #363e50;
+        }
+
+        .top-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .emblem {
+            background: #c9b38b;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1a1f2b;
+            font-size: 1.5rem;
+        }
+
+        .title h1 {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #ece7dd;
+            line-height: 1.2;
+        }
+
+        .title .sub {
+            font-size: 0.75rem;
+            color: #a7aec2;
+            letter-spacing: 2px;
+        }
+
+        .page-pills {
+            display: flex;
+            gap: 0.3rem;
+            flex-wrap: wrap;
+            background: #2d3443;
+            padding: 0.4rem;
+            border-radius: 3rem;
+        }
+
+        .pill {
+            padding: 0.6rem 1.2rem;
+            border-radius: 2rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            background: transparent;
+            color: #b9c1d4;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            border: none;
+            white-space: nowrap;
+        }
+
+        .pill i {
+            margin-right: 5px;
+            font-size: 0.8rem;
+        }
+
+        .pill.active {
+            background: #4f5a72;
+            color: white;
+        }
+
+        .pill:hover:not(.active) {
+            background: #3c4357;
+            color: #eaeef5;
+        }
+
+        .page-container {
+            background: #faf8f4;
+            padding: 2rem;
+            min-height: 650px;
+        }
+
+        .page {
+            display: none;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .page.active-page {
+            display: block;
+        }
+
+        .page img {
+            width: 100%;
+            height: auto;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 25px -8px rgba(0,0,0,0.2);
+            border: 1px solid #e5ddd0;
+            transition: transform 0.2s;
+        }
+
+        .page img:hover {
+            transform: scale(1.01);
+        }
+
+        .page-caption {
+            margin-top: 1rem;
+            color: #4a4f5c;
+            font-size: 0.95rem;
+            text-align: center;
+            font-style: italic;
+            border-top: 1px dashed #cbc3b5;
+            padding-top: 1rem;
+        }
+
+        .image-grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .sphere-footer {
+            background: #1a1f2b;
+            color: #99a1b5;
+            padding: 1.2rem 2rem;
+            font-size: 0.85rem;
+            border-top: 1px solid #2d3443;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-links a {
+            color: #ccd6e6;
+            text-decoration: none;
+            margin-left: 2rem;
+        }
+
+        .footer-links a i {
+            margin-right: 6px;
+        }
+
+        .footer-links a:hover {
+            color: #e6cba0;
+        }
+
+        .click-hint {
+            background: #e9e3d8;
+            border-radius: 2rem;
+            padding: 0.4rem 1.2rem;
+            font-size: 0.85rem;
+            color: #3a3f4b;
+            border: 1px solid #cdc5b6;
+            display: inline-block;
+        }
+
+        .click-hint i {
+            color: #b69e74;
+        }
+    </style>
+</head>
+<body>
+    <div class="sphere-app">
+        <div class="sanctuary-header">
+            <div class="top-bar">
+                <div class="logo-area">
+                    <div class="emblem"><i class="fas fa-eye"></i></div>
+                    <div class="title">
+                        <h1>The Doecial Sphere</h1>
+                        <div class="sub">a sanctuary for the unburdened mind</div>
+                    </div>
+                </div>
+                <div class="page-pills">
+                    <button class="pill active" data-page="page1"><i class="fas fa-house"></i> 1</button>
+                    <button class="pill" data-page="page2"><i class="fas fa-scale-balanced"></i> 2</button>
+                    <button class="pill" data-page="page3"><i class="fas fa-mask"></i> 3</button>
+                    <button class="pill" data-page="page4"><i class="fas fa-wind"></i> 4</button>
+                    <button class="pill" data-page="page5"><i class="fas fa-draw-polygon"></i> 5</button>
+                    <button class="pill" data-page="page6"><i class="fas fa-shield"></i> 6</button>
+                    <button class="pill" data-page="page7"><i class="fas fa-dragon"></i> 7</button>
+                    <button class="pill" data-page="page8"><i class="fas fa-paint-brush"></i> 8</button>
+                    <button class="pill" data-page="page9"><i class="fas fa-tree"></i> 9</button>
+                    <button class="pill" data-page="page10"><i class="fas fa-scroll"></i> 10</button>
+                    <button class="pill" data-page="page11"><i class="fas fa-lock"></i> 11</button>
+                    <button class="pill" data-page="page12"><i class="fas fa-coin"></i> 12</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-container" id="pageContainer">
+            <!-- Page 1 -->
+            <div class="page active-page" id="page1">
+                <img src="assets/images/The_Doecial_Sphere_1.png" alt="The Doecial Sphere - Sanctuary for the Unburdened Mind">
+                <div class="page-caption">
+                    <i class="fas fa-quote-left"></i> A sanctuary for the unburdened mind — where ideas speak, not identities
+                </div>
+            </div>
+
+            <!-- Page 2 -->
+            <div class="page" id="page2">
+                <img src="assets/images/The_Doecial_Sphere_2.png" alt="Identity Trap vs The Unidentified - comparison">
+                <div class="page-caption">
+                    Current social media vs. The Doecial Sphere: identity cultivation meets absolute anonymity
+                </div>
+            </div>
+
+            <!-- Page 3 -->
+            <div class="page" id="page3">
+                <img src="assets/images/The_Doecial_Sphere_3.png" alt="The Engine of Anonymity">
+                <div class="page-caption">
+                    The Engine of Anonymity — AI redaction and signal protection
+                </div>
+            </div>
+
+            <!-- Page 4 -->
+            <div class="page" id="page4">
+                <img src="assets/images/The_Doecial_Sphere_4.png" alt="The Doecial Sphere - Page 4">
+                <div class="page-caption">
+                    Faraday's Close · The Vaeth — spaces of shielded reflection
+                </div>
+            </div>
+
+            <!-- Page 5 -->
+            <div class="page" id="page5">
+                <img src="assets/images/The_Doecial_Sphere_5.png" alt="The Doecial Sphere - Page 5">
+                <div class="page-caption">
+                    The architecture of unburdened discourse
+                </div>
+            </div>
+
+            <!-- Page 6 -->
+            <div class="page" id="page6">
+                <img src="assets/images/The_Doecial_Sphere_6.png" alt="The Doecial Sphere - Page 6">
+                <div class="page-caption">
+                    Where concepts gather without identity
+                </div>
+            </div>
+
+            <!-- Page 7 -->
+            <div class="page" id="page7">
+                <img src="assets/images/The_Doecial_Sphere_7.png" alt="The Doecial Sphere - Page 7">
+                <div class="page-caption">
+                    The Menagerie · The Atelier · The Athenaeum
+                </div>
+            </div>
+
+            <!-- Page 8 -->
+            <div class="page" id="page8">
+                <img src="assets/images/The_Doecial_Sphere_8.png" alt="The Doecial Sphere - Page 8">
+                <div class="page-caption">
+                    Chambers of quiet wisdom
+                </div>
+            </div>
+
+            <!-- Page 9 -->
+            <div class="page" id="page9">
+                <img src="assets/images/The_Doecial_Sphere_9.png" alt="The Repository of Quiet Wisdom">
+                <div class="page-caption">
+                    The Repository of Quiet Wisdom — from page 9 of the manifesto
+                </div>
+            </div>
+
+            <!-- Page 10 -->
+            <div class="page" id="page10">
+                <img src="assets/images/The_Doecial_Sphere_10.png" alt="The Doecial Sphere - Page 10">
+                <div class="page-caption">
+                    Spaces of intellectual release
+                </div>
+            </div>
+
+            <!-- Page 11 -->
+            <div class="page" id="page11">
+                <img src="assets/images/The_Doecial_Sphere_11.png" alt="Maintaining the Sanctuary">
+                <div class="page-caption">
+                    Maintaining the Sanctuary — the ethics of preservation
+                </div>
+            </div>
+
+            <!-- Page 12 -->
+            <div class="page" id="page12">
+                <img src="assets/images/The_Doecial_Sphere_12.png" alt="The Ethical Business Model">
+                <div class="page-caption">
+                    The Ethical Business Model — monetizing structured, ethical thought
+                </div>
+            </div>
+
+            <!-- Quick hint for viewers -->
+            <div style="text-align: center; margin-top: 2rem;">
+                <span class="click-hint">
+                    <i class="fas fa-hand-pointer"></i> Click the numbered pills above to navigate all 12 pages
+                </span>
+            </div>
+        </div>
+
+        <div class="sphere-footer">
+            <div><i class="far fa-copyright"></i> The Doecial Sphere · complete visual archive</div>
+            <div class="footer-links">
+                <a href="#"><i class="fab fa-github"></i> View on GitHub</a>
+                <a href="#"><i class="fas fa-arrow-pointer"></i> 12 pages · 12 concepts</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function() {
+            const pills = document.querySelectorAll('.pill');
+            const pages = document.querySelectorAll('.page');
+
+            function activatePage(pageId) {
+                pages.forEach(p => p.classList.remove('active-page'));
+                pills.forEach(p => p.classList.remove('active'));
+
+                const targetPage = document.getElementById(pageId);
+                if (targetPage) targetPage.classList.add('active-page');
+
+                const activePill = Array.from(pills).find(pill => pill.dataset.page === pageId);
+                if (activePill) activePill.classList.add('active');
+            }
+
+            pills.forEach(pill => {
+                pill.addEventListener('click', function(e) {
+                    const pageId = this.dataset.page;
+                    if (pageId) activatePage(pageId);
+                });
+            });
+
+            // Ensure page 1 is active on load
+            activatePage('page1');
+        })();
+    </script>
+</body>
+</html>
