@@ -1,0 +1,26 @@
+## 🏛 Doecial Sphere Architecture
+
+```mermaid
+flowchart TD
+
+A[Outer Gate<br>Platform Entry] --> B[The Concourse<br>Onboarding Covenant]
+
+B --> C[The Vaeth<br>Main Discourse Sphere]
+
+C --> D[Faraday's Close<br>Concept Competitions]
+C --> E[The Menagerie<br>Creative Exhibition]
+C --> F[The Athenaeum<br>Knowledge Repository]
+C --> G[The Atelier<br>Corpus Generation Workspace]
+
+D --> H[Judges: Logos & Pathos]
+C --> I[Eidolon AI Guides]
+
+subgraph Core Systems
+J[Model Adaptation Shield]
+K[Fallacy Sensor]
+L[Wisdom Score System]
+end
+
+C --> J
+C --> K
+C --> L
