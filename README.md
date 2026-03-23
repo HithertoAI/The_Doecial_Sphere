@@ -1,312 +1,88 @@
-# 🌐 The Doecial Sphere
-<p align="center">
-<img src="docs/images/doecial_banner.png" width="900">
-</p>
-> *An anti-social network where ideas speak louder than identities.*
+# **🌐 The Doecial Sphere**
 
-<p align="center">
-A prototype platform exploring anonymous, concept-centered discourse mediated by AI.
-</p>
 
-<p align="center">
-  <img alt="Status" src="https://img.shields.io/badge/status-prototype-orange">
-  <img alt="Maintained" src="https://img.shields.io/badge/maintained-yes-green">
-  <img alt="License" src="https://img.shields.io/badge/license-TBD-lightgrey">
-  <img alt="AI Powered" src="https://img.shields.io/badge/AI-model--mediated-blue">
-  <img alt="Philosophy" src="https://img.shields.io/badge/philosophy-anti--social%20network-purple">
-</p>
 
----
-## ⚡ TL;DR
-
-The Doecial Sphere is an experimental social platform where:
-
-• identities are abstracted  
-• ideas are the primary object of interaction  
-• AI mediates discourse to protect anonymity  
-• reputation rewards reflection rather than influence
-
-The goal is to create a space for **honest, concept-centered discussion** in the age of AI.
-## 🧭 Overview
-
-**The Doecial Sphere** is an experimental social platform developed by **Hitherto** that reimagines digital interaction.
-
-Instead of building influence, identity, and personal brands, the Sphere is designed to reward:
-
-- thoughtful expression  
-- intellectual curiosity  
-- reflective engagement  
-- concept-centered discussion  
-
-Every public interaction is mediated through a **Model Adaptation Layer**, ensuring that ideas are evaluated independently from the individuals who originate them.
-
-The result is a space where **ideas compete — not identities.**
+**"The Architecture of Deliberative Neutrality: Where ideas speak louder than identities."**
 
 ---
 
-## 🧪 Prototype
+## **🧭 The Democratic Thesis**
 
-This repository contains the **working prototype and architectural foundation** of the Doecial Sphere, including early implementations of:
+Modern digital discourse is broken because it binds **ideas** to **persistent identities**. This creates "Reputation Risk" that discourages sincerity and "Identity Tribalism" that prevents rational deliberation.
 
-- model-mediated discourse
-- identity abstraction systems
-- experimental reputation mechanics
-- AI-assisted moderation and reasoning tools
+**The Doecial Sphere** is a social modernization project that implements the **Holokleric Standard** ($ὁλόκληρος$) to create a "Decoupling Engine." By using AI as a protective shield, we separate the *merit* of an argument from the *status* of the speaker.
 
-The prototype exists as a research platform exploring **new models of human-AI discourse environments**.
+In the Sphere, participants become **The Unidentified**. Ideas become the only currency.
 
 ---
 
-<p align="center">
-🦌 Built by <strong>Hitherto</strong>
-</p>
+## **🏛️ The EbD Infrastructure (Everything-By-Default)**
+
+The Doecial Sphere isn't just an "anti-social network"; it is a sovereign ecosystem built on the **Bauta-Keating** logic.
+
+### **🛡️ The Bauta Valve (Model Adaptation Shield)**
+
+At the heart of the Sphere is the **Bauta Valve**. All public-facing content is sieved through this 6-chambered local NPU gateway.
+
+* **Stylistic Fingerprinting Removal:** The Valve strips idiosyncratic speech patterns that could lead to "De-anonymization."  
+* **Fallacy Annotation:** Integrated sensors detect logical fallacies in real-time, encouraging stronger, evidence-based reasoning rather than rhetorical bullying.
+
+### **🧠 The Keating Mentor (Eidolon Guides)**
+
+Every user is paired with a stateful **Eidolon Guide** (a Keating-class mentor).
+
+* **Role:** The Guide assists with navigation, provides psychological ease during controversial discussions, and ensures the user maintains the **Onboarding Covenant**.  
+* **Cognitive Integrity:** The Guide is an *Interpreter* of the user's intent, helping them refine their ideas before they pass through the Bauta Valve for public consumption.
+
+### **♻️ The Circular Economy (The Atelier)**
+
+To ensure **Economic Sovereignty**, the Sphere is self-funding. Within **The Atelier**, users can opt-in to structured tasks that generate **Anonymized Workflow Corpora (AWC)**.
+
+* **Sustainability:** Licensing this high-fidelity, ethically-cleared research data funds the infrastructure, ensuring the Sphere never has to sell user data or run advertisements.
 
 ---
 
-# 🏛 Inside the Sphere
+## **🗺️ Geography of the Sphere**
 
-The Doecial Sphere is an experimental social platform developed by Hitherto that explores a radically different model of digital discourse: a space where identity is structurally minimized and ideas are evaluated on their own merit.
+| Area | Purpose | The "By Default" Mechanism |
+| :---- | :---- | :---- |
+| **The Concourse** | Onboarding & Ritual | Mandatory **Covenant** to "Leave Ego Behind." |
+| **The Vaeth** | Central Discourse | **Model Adaptation Shield** ensures idea-centricity. |
+| **Faraday's Close** | Concept Arena | Judged by **Logos** (Logic) and **Pathos** (Resonance). |
+| **The Menagerie** | Creative Exhibition | **Style Masks** preserve the concept, obscure the artist. |
+| **The Athenaeum** | Knowledge Hall | Scribes steward a library of **Holokleric** truth. |
+| **The Atelier** | Value Creation | Generation of **Anonymized Workflow Corpora**. |
 
-Unlike traditional social networks that reward visibility, influence, and personal branding, the Doecial Sphere is designed to reward reflection, intellectual honesty, and concept-centered discussion.
+---
 
-This repository contains the working prototype and architectural foundation for the platform.
+## **🎖️ The Wisdom Score (Reputation 2.0)**
 
-🧭 Project Status
+Instead of likes, followers, or clout, the Sphere rewards **Wisdom (WS)**.
 
-🧪 Prototype Stage
+* **Positive Metrics:** Rewards reflection, self-correction, constructive moderation, and the ability to engage with the "other" without personal conflict.  
+* **Democratic Impact:** WS acts as a "Trust-Layer" for deliberative democracy, identifying high-integrity contributors based on their behavior, not their brand.
 
-The Doecial Sphere currently exists as an early prototype demonstrating the core mechanisms of the system, including:
+---
 
-model-mediated user expression
+## **🧪 Research & Democracy x AI**
 
-identity abstraction
+The Doecial Sphere serves as a living laboratory for:
 
-concept-centered discourse mechanics
+* **AI-Mediated Deliberation:** Can AI shields reduce political polarization?  
+* **Digital Identity Abstraction:** Is a "Jane/John Doe" environment more conducive to truth than a verified one?  
+* **Sovereign Economies:** Can a social network exist as a self-funding utility for the public good?
 
-experimental reputation systems
+---
 
-The current implementation serves as a proof-of-concept for a new type of social environment.
+## **🚀 Roadmap: The 4 Phases of Autonomy**
 
-🧠 The Problem
+1. **Phase 1: Foundation (Current):** Prototype expansion and Bauta Valve integration.  
+2. **Phase 2: The Core Sphere:** Launching The Vaeth and the initial AWC licensing pilot.  
+3. **Phase 3: Intelligence Activation:** Full scaling of Eidolon Guides and Logos/Pathos judges.  
+4. **Phase 4: Graduation:** The first autonomous "Doecial" community banquet and permanent autonomy.
 
-Modern social platforms bind every statement to a persistent identity.
+---
 
-This creates a number of structural problems:
-
-people cannot express controversial or vulnerable ideas safely
-
-social pressure encourages performance rather than sincerity
-
-disagreement often becomes personal conflict
-
-reputation risk discourages intellectual exploration
-
-Many users report feeling they cannot say what they actually think without risking professional or social consequences.
-
-The Doecial Sphere explores a different question:
-
-What happens when identity becomes irrelevant and ideas must stand on their own?
-
-🦌 Why “Doecial”?
-
-The name derives from John/Jane Doe, the legal placeholder used to represent an unidentified person.
-
-Historically, the use of "Doe" allowed legal arguments to focus on the matter being debated rather than the identity of the participants.
-
-The Doecial Sphere applies this principle to digital discourse.
-
-Participants become The Unidentified.
-
-Ideas become the central unit of interaction.
-
-🏛 Conceptual Architecture
-
-The platform is structured as a series of conceptual spaces.
-
-Outer Gate
-   │
-   ▼
-The Concourse (Onboarding Covenant)
-   │
-   ▼
-The Vaeth (Core Sphere)
-   ├── Faraday's Close
-   ├── The Menagerie
-   ├── The Athenaeum
-   └── The Atelier
-
-   Each area supports a different form of interaction within the ecosystem.
-
-🌿 The Vaeth
-
-The primary discourse environment.
-
-Users interact through masked personas and engage directly with ideas rather than personal profiles.
-
-Key elements include:
-
-Model Adaptation Shield
-All public-facing content is processed through a model layer to remove stylistic fingerprints and protect anonymity.
-
-Fallacy Sensor
-Posts containing common logical fallacies are annotated to encourage stronger reasoning.
-
-Eidolon Guides
-Each user receives a personal AI companion that assists with navigation, reflection, and discussion.
-
-🏟 Faraday’s Close
-
-A competitive arena for concept-driven events.
-
-Rather than competing as individuals, participants submit ideas or prompts that are executed or simulated by models.
-
-Two AI judges preside over the arena:
-| Judge      | Domain                                      |
-| ---------- | ------------------------------------------- |
-| **Logos**  | Logical rigor and technical merit           |
-| **Pathos** | Conceptual ambition and emotional resonance |
-
-🎨 The Menagerie
-
-An experimental creative gallery.
-
-Users submit artistic concepts which are rendered using Generative Style Masks.
-
-This mechanism intentionally obscures personal artistic signatures so that:
-
-the concept remains intact
-
-the creator remains anonymous
-
-This transforms the exhibition into a gallery of ideas rather than reputations.
-
-📚 The Athenaeum
-
-A knowledge library and study environment.
-
-The Athenaeum hosts:
-
-curated public domain works
-
-user-contributed essays and guides
-
-technical learning modules
-
-philosophical and conceptual resources
-
-Trusted contributors may earn Scribe status, allowing them to submit new material.
-
-🛠 The Atelier
-
-A separate, opt-in workspace for structured interaction with AI systems.
-
-Participants can engage in guided conversations or evaluation tasks that produce high-quality conversational corpora.
-
-These interactions can support:
-
-model research
-
-AI alignment experiments
-
-training dataset development
-
-Participation is optional and gated to protect the core Sphere from commercialization pressures.
-
-🎖 Reputation System
-
-Instead of likes, followers, or influence metrics, the platform uses a Wisdom Score (WS).
-
-WS rewards:
-
-thoughtful posts
-
-deep reading and reflection
-
-constructive moderation
-
-engagement with AI dialogue systems
-
-revision and self-correction
-
-This system intentionally favors depth over visibility.
-
-🛡 Core Design Principles
-
-The Doecial Sphere is guided by several foundational rules:
-
-Anonymity by Design
-Identity signals are structurally suppressed.
-
-Concept-Centered Interaction
-Ideas are the primary objects of engagement.
-
-Anti-Influencer Culture
-Popularity mechanics are minimized.
-
-Model-Mediated Communication
-AI layers help enforce anonymity and improve discourse quality.
-
-🔬 Research Areas
-
-The project intersects several domains:
-
-AI-mediated communication
-
-social platform design
-
-digital identity abstraction
-
-discourse quality systems
-
-human–AI collaboration environments
-
-The prototype serves as an experimental platform for exploring these ideas.
-
-🏛 About Hitherto
-
-Hitherto develops experimental systems exploring the intersection of:
-
-artificial intelligence
-
-culture
-
-narrative systems
-
-human expression
-
-The Doecial Sphere is part of a broader effort to investigate new models of human–AI collaboration and discourse.
-
-🤝 Collaboration
-
-The project is actively exploring partnerships with:
-
-AI researchers
-
-platform engineers
-
-social scientists
-
-digital ethics researchers
-
-investors interested in experimental social technology
-
-If the concept resonates with you, contributions and conversations are welcome.
-
-📜 License
-
-License information will be defined as the project evolves.
-
-🚀 Next Steps
-
-Current priorities include:
-
-expanding prototype capabilities
-
-refining moderation architecture
-
-testing discourse mechanics
-
-developing scalable model integration
 
 ## 🏛 Doecial Sphere Architecture
 
